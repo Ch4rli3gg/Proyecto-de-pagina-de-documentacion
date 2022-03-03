@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Documentación Lenguaje Fortran</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<style type="text/css">
+		@media (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+    background: green;
+  }
+
+  
+}
+	</style>
+
+<nav id="navbar">
+  <header>Introducción a las Computadoras y al lenguaje Fortran</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="#Introduccion">Introduccion</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#La_Computadora">La Computadora</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#El_CPU">El CPU</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#Memoria">Memoria</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#Memoria_Cache">Memoria Cache</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#Memoria_Principal">Memoria Principal</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#Memoria_Secundaria">Memoria Secundaria</a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#Dispositivos_de_entrada/salida">Dispositivos de entrada/salida</a>
+    </li>
+    
+    <li>
+      <a class="nav-link"
+         href="#Lenguajes_de_Computacion"
+         >Lenguajes de Computacion
+      </a>
+    </li>
+    <li>
+      <a class="nav-link"
+         href="#La_Historia_del_lenguaje_Fortran"
+         >La historia del lenguaje Fortran</a>
+    </li>
+    <li>
+      <a class="nav-link"
+         href="#La_estructura_de_una_declaracion_Fortran"
+         >La estructura de una declaracion Fortran</a>
+    </li>
+    <li>
+      <a class="nav-link"
+         href="#La_estructura_de_un_programa_Fortran">
+           La estructura de un programa Fortran
+         </a>
+    </li>
+    <li>
+      <a class="nav-link"
+         href="#Constantes_y_Variables"
+         >Constantes y Variables</a>
+    </li>
+
+    <li>
+       <a 	class="nav-link"
+       		href="#Referencias_Bibliograficas"
+       		>Referencias Bibliograficas</a>	
+    </li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduccion">
+    <header>
+      Introduccion 
+    </header>
+    <article>
+      <p>
+        La computadora es probablemente el invento más importante del siglo XX. ¿Pero qué son esos dispositivos que han tenido tal impacto en nuestras vidas? Una computadora es un tipo especial de máquina que guarda información, y puede realizar cálculos matemáticos sobre esa información en velocidades mucho más rápidas de lo que los seres humanos pueden pensar. Un programa, el cual es almacenado en la memoria de la computadora, le dice a la computadora qué secuencia de cálculos y qué información son requeridos para realizar los cálculos.
+        
+        </p>
+      <p>
+        Las computadoras pueden almacenar grandes cantidades de información, y con la programación apropiada, pueden poner esa información disponible instantáneamente cuando se necesite.
+      </p>
+
+      <p>
+        Es importante darse cuenta que las computadoras no piensan en la forma como los humanos entendemos este proceso. Solamente siguen los pasos contenidos en sus programas. Cuando una computadora parece estar haciendo algo inteligente,es porque una persona inteligente ha escrito el programa que se está ejecutando (al menos en los procesos donde no se utilizan inteligencias artificiales...). Aquí es donde los seres humanos entran en escena. Es nuestra creatividad colectiva que permite  a las computadoras realizar cosas casi milagrosas.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="La_Computadora">
+    <header>
+      La Computadora
+    </header>
+    <article>
+      <p>
+        Los componentes más importantes de una computadora son:
+      <ul>
+        <li>La unidad de procesamiento central (CPU)</li>
+        <li>La memoria principal</li>
+        <li>La memoria secundaria</li>
+        <li>Dispositivos de entrada y salida</li>
+      </ul>
+      </p>
+      
+    </article>
+   </section>
+
+  <section class="main-section" id="El_CPU">
+    <header>El CPU</header>
+    <article>
+      <p>
+        La unidad de procesamiento central es el corazón de cualquier computadora. Está dividida en una unidad de control, una unidad de lógica aritmética (ALU), y memoria interna. La unidad de control dentro del CPU controla todas las otras partes de la computadora, mientras la ALU realiza los calculos matemáticos. La memoria interna dentro del CPU consiste de una serie de registros de memoria usadas para almacenamiento temporal de resultados intermedios durante los cálculos, mas una memoria caché para almacenar datos temporalmente que se podrían necesitar en un futuro cercano.
+      </p>
+      <p>
+        La unidad de control del CPU interpreta las instrucciones del programa. También busca valores de datos de la memoria principal (o la memoria caché) y los almacena en los registros de memoria, y manda datos de valores de los registros de memoria a los dispositivos de salida o a la memoria principal.
+      </p>
+      <p>
+        Los CPUs modernos se han vuelto dramáticamente más rápidos al incorporar multiples AlUs corriendo en paralelo, permitiendo que más operaciones sean realizadas en una cantidad de tiempo dada. También incorporan memorias cachés más grandes en el chip del CPU, permitiendo que los datos sean buscados y guardados muy rápidamente.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Memoria">
+    <header>Memoria</header>
+    <article>
+      <p>
+        La memoria de una computadora esta dividida en tres importantes tipos:
+      <ul>
+        <li>Memoria Caché</li>
+        <li>Memoria Principal o Primaria</li>
+        <li>Memoria secundaria</li>
+      </ul>
+      </p>
+    
+    
+    </article>
+  
+  </section>
+  <section class="main-section" id="Memoria_Cache">
+    <header>Memoria Cache</header>
+    <article>
+      <p>
+      La memoria caché es memoria almacenada en el chip del CPU. Esta memoria puede ser accesada muy rápidamente, permitiendo que los cálculos se realizen a muy alta velocidad. La unidad de control mira hacia adelante en el programa para ver qué datos serán necesarios, y los precarga de la memoria principal hacia la memoria caché, para que así puedan ser usados con demora mínima. La unidad de control también copia los resultados de los calculos del caché de nuevo a la memoria principal cuando ya no son necesarios.
+    </p>
+    </article>
+    
+  </section>
+
+  <section class="main-section" id="Memoria_Principal">
+    <header>
+      Memoria Principal
+    </header>
+    <article>
+      <p>
+        La memoria principal consiste usualmente de chips de semiconductores separados, conectados al CPU por conductores llamados bus de memoria. Esta es muy rápida, y relativamente barata en comparación a la memoria del CPU. Los datos que son almacenados en la memoria Principal pueden ser recuperados para su uso en unos pocos nanosegundos o menos (algunas veces mucho menos) en una computadora moderna. Debido a que es tan rápida y barata, la memoria principal es usada para almacenar temporalmente el programa que esté siendo ejecutado actualmente por la computadora, así como los datos que el programa requiera.
+      </p>
+      <p>
+        La memoria principal no se usa para almacenamiento permanente de programas o datos. La mayor parte de la memoria principal is volátil, esto significa que  se borra cuando la computadora se apaga. Además, la memoria principal es relativamente cara, así que solo se compra la memoria suficiente para que los programas que funcionen los programas que esten siendo ejecutados en un momento dado.
+      </p>
+      
+      <article>
+  </section>
+      
+      <section class="main-section" id="Memoria_Secundaria">
+        <header>Memoria Secundaria</header>
+        <article>
+          <p>
+            La memoria secundaria consiste en dispositivos que son mas lentos y baratos que la memoria principal. Estos pueden almacenar mucha más información por mucho menos costo que la memoria principal. Además, muchos dispositivos de memoria secundaria son no-volátiles, esto significa que pueden retener los programas y datos almacenados en ellos cuando la computadora se apaga. Dispositivos típicos de memoria secundaria son Discos duros, discos de estado solido (SSD), USB, y DVDs. Los dispositivos de almacenamiento secundario son usados normalmente para almecenar programas y datos que no son necesarios al momento, pero que pueden ser necesitados en algun momento en el futuro.
+          </p>
+        </article>
+      </section>
+      
+      <section class="main-section" id="Dispositivos_de_entrada/salida">
+        <header>Dispositivos de entrada/salida</header>
+        <article>
+          <p>
+            Los datos son ingresados a la computadora a través de un dispositivo de entrada, y son retornados a través de un dispositivo de salida. Los dispositivos de entrada más comunes en las computadoras modernas son el teclado y el ratón. 
+            
+          </p>
+          <p>
+            Los dispositivos de salida nos permiten utilizar los datos almacenados en una computadora. Los dispositivos de salida más comunes en las computadoras de hoy en día son las pantallas y las impresoras.
+          </p>
+        </article>
+        
+      </section>
+      
+      <section class="main-section" id="Lenguajes_de_Computacion">
+        <header> Lenguajes de Computacion</header>
+        <article>
+          <p>
+            Cuando una computadora ejecuta un programa, ejecuta una cadena de operaciones muy simples tales como cargar, almacenar, sumar, restar, multiplicar, y cosas así. Cada una de esas operaciones  tiene un único patrón binario llamado código de operacion (op code). El programa que ejecuta una computadora es solo una cadena de op codes en un determinado orden para lograr un propósito. Los op codes son colectivamente llamados <b>lenguaje maquina</b>, puesto que son el lenguaje que una computadora reconoce y ejecuta.
+          </p>
+          
+          <p>
+            Desafortunadamente  para los seres humanos es muy difícil trabajar con el lenguaje máquina. Para nosotros es más fácil hacer programas con <b>lenguajes de alto nivel</b>. Por lo tanto escribimos las instrucciones en lenguaje de alto nivel y después usamos programas llamados  compiladores e interpretes para convertir las instrucciones en lenguaje máquina que la computadora pueda entender.
+          </p>
+          
+          <p>Existen muchos lenguajes diferentes de alto nivel, con diferentes características. Así que es importante elegir el lenguaje adecuado para enfrentar el problema que se esté intentando resolver.</p>
+          
+          <p>
+            Algunos lenguajes de alto nivel de la actualidad incluyen Ada, C, C++, Fortran y Java. Historicamente ha sido el lenguaje dominante para cálculos científicos en general. Ha estado presente en una forma o en otra por más de 60 años, y ha sido utilizado para implementar desde modelos computacionales de plantas nucleares hasta programas de diseño en aeronaútica, y sistemas de procesamiento de señales sísmicas. Este lenguaje es especialmente útil para análisis numérico y cálculos técnicos. Además, Fortran es el lenguje dominante en el mundo de las supercomputadoras y computadoras paralelas masivamente.
+          </p>
+        </article>
+      </section>
+      
+      <section class="main-section"
+               id="La_Historia_del_lenguaje_Fortran"
+               >
+        <header>La Historia del lenguaje Fortran</header>
+        <article>
+          <p>
+            Fortran es el abuelo de todos los lenguajes de computación científicos. El nombre Fortran es derivado de FORmula TRANSlation, indicando que el lenguaje fue concebido desde el inicio para trasladar ecuaciones científicas a código. La primera versión de el lenguaje Fortran fue desarrollada durante los años 1954-1957 por IBM para uso con su computadora Type 704. Antes de ese tiempo, esencialmente todos los programas computacionales eran generados a mano en lenguaje máquina, lo cual era lento, tedioso y propenso a errores. Fortran fue un producto muy revolucionario. Por primera vez, un programador podía escribir un algoritmo deseado como una serie de ecuaciones algebraicas estandar, y el compilador Fortran convertiría las declaraciones en lenguaje máquina que la computadora podía reconocer y ejecutar.
+          </p>
+          
+          <p>Fortran fue una idea maravillosa. La gente comenzo a utilizarlo tan pronto como estuvo disponible, porque hacía la programación mucho mas fácil que el lenguaje máquina. El lenguaje fue oficialmente lanzado en Abril de 1957, y por el otoño de 1958, mas de la mitad de todos los programas de las IBM 704 estaban siendo escritos en Fortran.</p>
+          
+          <p>
+            El lenguaje original Fortran era muy pequeño comparado a sus versiones modernas. Este contenia  solo un numero litidado de tipos de declaracion, y soportaba solo los tipos de datos integer y real. No había subrutinas en el primer Fortran. Ese fue un primer esfuerzo en escribir un lenguaje de alto nivel, y naturalmente muchas deficiencias fueron encontradas cuando la gente comenzó a usar el lenguaje regularmente. IBM abordó esos problemas, lanzando Fortran II en la primavera de 1958. Así han ido surgiendo varias versiones a través de los años.
+          </p>
+        </article>
+        
+      </section>
+      
+      <section class="main-section" id="La_estructura_de_una_declaracion_Fortran">
+        <header>La estructura de una declaracion Fortran</header>
+        <article>
+          <p>
+          Un programa en Fortran consiste de una serie de declaraciones diseñadas para realizar el objetivo de un programador. Hay dos tipos básicos de declaraciones: <b>declaraciones ejecutables</b> y <b>declaraciones no ejecutables</b>. Las declaraciones ejecutables describen las acciones realizadas por el programa cuando es ejecutado (sumas,restas, divisiones, etc.), mientras las declaraciones no ejecutables proveen información necesaria para la correcta operación del programa.  
+          </p>
+          <p>
+            Las declaraciones Fortran pueden ser insertadas en cualquier lugar de una línea, y cada línea puede tener una longitud de hasta 132 caracteres. Si una declaración es muy larga para caber en una línea, puede ser continuada en la siguiente línea terminando la linea actual con el símbolo ampersand (&). Por ejemplo, las siguientes tres declaraciones son idénticas:
+          </p>
+          
+          <code>
+            output= input1 + input 2 ! Sum the inputs 
+          </code>
+          
+          <code>
+            output= input1 &
+                  +input2 !Sum the inputs
+          </code>
+          
+          <code>
+            999 output = unput1 & !sum the inputs
+            & + input 2
+          </code>
+          
+          <p>
+            Cada una de las declaraciones especifica que la computadora debe sumar las cantidades almacenadas en input1 y input2 y guardar el resultado en output. Una declaración Fortran puede ocupar hasta 256 lineas, si es necesario. 
+          </p>
+        </article>
+        
+      </section>
+      
+      <section class="main-section" id="La_estructura_de_un_programa_Fortran">
+        <header>La estructura de un programa Fortran</header>
+        <article>
+          <p>Cada programa Fortran consiste de una mezcla de declaraciones ejecutables y no ejecutables, las cuales deben ocurrir en un orden específico. A continuación se muestra un programa, el cual lee dos numeros, los multiplica, y muestra el resultado:</p>
+          <code>
+            PROGRAM my_first_program
+            INTEGER::i,j,k
+            
+            Write (*,*) 'Ingresa los números a multiplicar:'
+            Read (*,*) i,j
+            k=i*j
+            
+            Write(*,*)'resultado= ',k
+            Stop
+            End Program my_first_program
+          </code>
+          <p>
+            Este programa, como todos los programas en Fortran, está dividido en tres secciones:
+            
+          </p>
+          <ul>
+            <li>Sección de declaraciones. Esta sección consiste de un grupo de declaraciones no ejecutables al principio del programa que define el nombre del programa y el número de tipos de variables de referenciadas en el programa.
+            </li>
+            <li>
+              Sección de ejecución. Esta sección consiste de una o más declaraciones describiendo las acciones a ser realizadas por el programa.
+            </li>
+            <li>Sección de terminación. Esta sección consiste de una declaración o declaraciones que detienen la ejecución del programa y le avisan al compilador que el programa está completo.</li>
+          </ul>
+        </article>
+        
+      </section>
+      
+      <section class="main-section"
+               id="Constantes_y_Variables">
+        <header>Constantes y Variables</header>
+        <article>
+          <p>Una constante es un dato que es definido antes de que el programa sea ejecutado, y no cambia el valor durante la ejecución del programa. Cuando un compilador Fortran encuentra una constante, coloca su valor en un lugar conocido dentro de la memoria, y referencia esa localización cuando la constante es usada en el programa. Una variable es un dato que puede cambiar su valor durante la ejecución del programa. Cuando un compilador Fortran encuentra una variable, reserva un lugar conocido en la memoria, y referencia ese lugar de la memoria cuando la variable es utilizada en el programa.</p>
+          <p>
+            Cada variable en Fortran en un programa debe tener un nombre único. El nombre de la variable es una etiqueta para un espacio específico en la memoria que es fácil para los humanos recordar y utilizar. Las variables en Fortran pueden tener una longitud de hasta 63 caracteres, y pueden contener cualquier combinación de caracteres del alfabeto, digitos, y el símbolo guion bajo (_). Sin embargo el primer caracter en el nombre deber ser siempre uno del alfabeto. Los siguientes ejemplos son nombres de variable válidos:
+          </p>
+          <code>
+            time
+            distance
+            z123456789
+            I_want_to_go_home
+          </code>
+          <p>
+            Los siguientes ejemplos No son nombres validos para una variable:
+          </p>
+          <code>
+            3_days
+            A$
+          </code>
+        </article>
+        
+      </section>
+
+      <section class="main-section"
+      			id="Referencias_Bibliograficas">
+      	<header>Referencias Bibliograficas</header>
+      	<p>Para la elaboración de este proyecto se tomó como referencia el libro:<br>
+      		<ul>
+      			<li><i>Fortran for Scientist and Engineers. Fourth Edition. Stephen J. Chapman</i></p></li>
+      		</ul>
+      	
+      	<p><small>Se utiliza la información de ese libro en este proyecto solamente con fines didácticos y sin fines de lucro.</small> </p>
+      </section>
+  
+
+ </main>
+
+
+</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
